@@ -12,7 +12,9 @@
       "Bash(xargs cat:*)",
       "Bash(curl:*)",
       "Bash(./calculate_all_standings.sh)",
-      "Bash(pip3 install:*)"
+      "Bash(pip3 install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
