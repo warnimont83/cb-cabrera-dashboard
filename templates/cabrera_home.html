@@ -41,7 +41,7 @@
             {% for team in teams %}
             <a href="/team/{{ team.path }}?season={{ selected_season }}" class="team-card">
                 <div class="team-card-header">
-                    <h3>{{ team.display_name }}</h3>
+                    <h3>{{ team.display_name|format_team_name }}</h3>
                     <span class="team-badge">{{ team.match_count }} {{ t.matches|lower }}</span>
                 </div>
                 <div class="team-quick-stats">

@@ -2,18 +2,18 @@
 
 {% block content %}
 <div class="header">
-    <a href="/?season={{ selected_season }}" class="back-link">&larr; Back to home</a>
-    <h1>Rival Teams Analysis</h1>
-    <p>Scout your opponents</p>
+    <a href="/?season={{ selected_season }}" class="back-link">&larr; {{ t.back_to_home }}</a>
+    <h1>{{ t.rival_teams_analysis }}</h1>
+    <p>{{ t.scout_your_opponents }}</p>
 
     <!-- Season Selector -->
     <div class="season-selector">
-        <label for="seasonSelect">Season:</label>
+        <label for="seasonSelect">{{ t.season }}:</label>
         <select id="seasonSelect" onchange="window.location.href='/rivals?season=' + this.value">
-            <option value="all" {% if selected_season == 'all' %}selected{% endif %}>All Seasons</option>
+            <option value="all" {% if selected_season == 'all' %}selected{% endif %}>{{ t.all_seasons }}</option>
             {% for season in available_seasons %}
             <option value="{{ season }}" {% if selected_season == season %}selected{% endif %}>
-                {{ season }} {% if season == current_season %}(Current){% endif %}
+                {{ season }} {% if season == current_season %}({{ t.current }}){% endif %}
             </option>
             {% endfor %}
         </select>
@@ -23,11 +23,11 @@
 <div class="stats-summary">
     <div class="stat-card">
         <h3>{{ total_rivals }}</h3>
-        <p>Rival Teams</p>
+        <p>{{ t.rival_teams }}</p>
     </div>
     <div class="stat-card">
         <h3>{{ rivals|sum(attribute='matches_played') }}</h3>
-        <p>Matches Played</p>
+        <p>{{ t.matches_played }}</p>
     </div>
 </div>
 
@@ -36,24 +36,24 @@
     <input type="text"
            id="rivalSearch"
            class="search-input"
-           placeholder="Search for a rival team..."
+           placeholder="{{ t.search_for_rival }}"
            autocomplete="off">
 </div>
 
 <!-- Rivals Table -->
 <div class="table-container">
-    <h2>Opponent Teams ({{ selected_season }})</h2>
+    <h2>{{ t.opponent_teams }} ({{ selected_season }})</h2>
     <table class="stats-table sortable" id="rivalsTable">
         <thead>
             <tr>
-                <th data-sort="name">Team Name</th>
-                <th data-sort="matches_played">Matches</th>
-                <th data-sort="wins_against_us">W</th>
-                <th data-sort="losses_against_us">L</th>
+                <th data-sort="name">{{ t.team_name }}</th>
+                <th data-sort="matches_played">{{ t.matches }}</th>
+                <th data-sort="wins_against_us">{{ t.wins }}</th>
+                <th data-sort="losses_against_us">{{ t.losses }}</th>
                 <th>W/L%</th>
-                <th data-sort="avg_points_scored">Avg Pts</th>
-                <th>Categories</th>
-                <th>Actions</th>
+                <th data-sort="avg_points_scored">{{ t.avg_points }}</th>
+                <th>{{ t.categories }}</th>
+                <th>{{ t.actions }}</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +80,7 @@
                     </div>
                 </td>
                 <td>
-                    <a href="/rival/{{ rival.id }}?season={{ selected_season }}" class="btn-small">View Details</a>
+                    <a href="/rival/{{ rival.id }}?season={{ selected_season }}" class="btn-small">{{ t.view_details }}</a>
                 </td>
             </tr>
             {% endfor %}
@@ -90,8 +90,8 @@
 
 {% if not rivals %}
 <div class="empty-state">
-    <h2>No rival teams found</h2>
-    <p>No opponents recorded for the selected season</p>
+    <h2>{{ t.no_rival_teams_found }}</h2>
+    <p>{{ t.no_opponents_recorded }}</p>
 </div>
 {% endif %}
 

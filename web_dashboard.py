@@ -21,6 +21,10 @@ from translations import get_all_translations
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
+# Memory optimization settings
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max request size
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 300  # Cache static files for 5 minutes
+
 # Set default language to Catalan
 DEFAULT_LANG = 'ca'
 
@@ -32,6 +36,15 @@ def inject_translations():
         't': get_all_translations(lang),
         'lang': lang
     }
+
+@app.template_filter('format_team_name')
+def format_team_name(name):
+    """Format team name: replace underscores with spaces and capitalize properly"""
+    if not name:
+        return name
+    # Replace underscores with spaces
+    formatted = name.replace('_', ' ')
+    return formatted
 
 
 def get_club_id_by_name(club_name):
