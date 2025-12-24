@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="/" class="logo">Basketball Stats</a>
+            <a href="/" class="logo">{{ t.basketball_stats }}</a>
             <div class="nav-links">
-                <a href="/">Teams</a>
+                <a href="/">{{ t.teams }}</a>
             </div>
         </div>
     </nav>
@@ -23,7 +23,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Basketball Statistics Dashboard | Generated with Python & Flask</p>
+            <p>&copy; 2024 {{ t.dashboard_title }} | {{ t.powered_by }} Python & Flask</p>
         </div>
     </footer>
 </body>

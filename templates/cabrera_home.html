@@ -10,23 +10,23 @@
         <h1>Club Bàsquet Cabrera</h1>
         <p class="club-location">Cabrera de Mar</p>
         <div class="club-stats-inline">
-            <span>{{ total_categories }} Categories</span>
+            <span>{{ total_categories }} {{ t.categories }}</span>
             <span>•</span>
-            <span>{{ total_teams }} Teams</span>
+            <span>{{ total_teams }} {{ t.teams }}</span>
             <span>•</span>
-            <span>{{ total_matches }} Matches Tracked</span>
+            <span>{{ total_matches }} {{ t.matches_tracked }}</span>
         </div>
     </div>
 </div>
 
 <!-- Season Selector -->
 <div class="season-selector-global">
-    <label for="globalSeasonSelect">Season:</label>
+    <label for="globalSeasonSelect">{{ t.season }}:</label>
     <select id="globalSeasonSelect" onchange="window.location.href='/?season=' + this.value">
-        <option value="all" {% if selected_season == 'all' %}selected{% endif %}>All Seasons</option>
+        <option value="all" {% if selected_season == 'all' %}selected{% endif %}>{{ t.all_seasons }}</option>
         {% for season in available_seasons %}
         <option value="{{ season }}" {% if selected_season == season %}selected{% endif %}>
-            {{ season }} {% if season == current_season %}(Current){% endif %}
+            {{ season }} {% if season == current_season %}({{ t.current }}){% endif %}
         </option>
         {% endfor %}
     </select>
@@ -42,13 +42,13 @@
             <a href="/team/{{ team.path }}?season={{ selected_season }}" class="team-card">
                 <div class="team-card-header">
                     <h3>{{ team.display_name }}</h3>
-                    <span class="team-badge">{{ team.match_count }} matches</span>
+                    <span class="team-badge">{{ team.match_count }} {{ t.matches|lower }}</span>
                 </div>
                 <div class="team-quick-stats">
                     {% if team.record %}
-                    <span class="team-record">{{ team.record.wins }}W - {{ team.record.losses }}L</span>
+                    <span class="team-record">{{ team.record.wins }}{{ t.wins }} - {{ team.record.losses }}{{ t.losses }}</span>
                     {% endif %}
-                    <span class="team-players">{{ team.player_count }} players</span>
+                    <span class="team-players">{{ team.player_count }} {{ t.players|lower }}</span>
                 </div>
             </a>
             {% endfor %}
@@ -59,27 +59,27 @@
 
 <!-- Quick Links Section -->
 <div class="quick-links">
-    <h2>Quick Access</h2>
+    <h2>{{ t.quick_access }}</h2>
     <div class="quick-links-grid">
         <a href="/calendar?season={{ selected_season }}" class="quick-link-card">
             <div class="quick-link-icon">📅</div>
             <div class="quick-link-text">
-                <h3>Calendar</h3>
-                <p>View all matches</p>
+                <h3>{{ t.calendar }}</h3>
+                <p>{{ t.view_all_matches }}</p>
             </div>
         </a>
         <a href="/rivals?season={{ selected_season }}" class="quick-link-card">
             <div class="quick-link-icon">🎯</div>
             <div class="quick-link-text">
-                <h3>Rival Teams</h3>
-                <p>Scout opponents</p>
+                <h3>{{ t.rival_teams }}</h3>
+                <p>{{ t.scout_opponents }}</p>
             </div>
         </a>
         <a href="/stats?season={{ selected_season }}" class="quick-link-card">
             <div class="quick-link-icon">📊</div>
             <div class="quick-link-text">
-                <h3>Club Statistics</h3>
-                <p>Overall performance</p>
+                <h3>{{ t.club_statistics }}</h3>
+                <p>{{ t.overall_performance }}</p>
             </div>
         </a>
     </div>

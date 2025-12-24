@@ -105,6 +105,16 @@ translations = {
         'welcome': 'Benvingut',
         'select_team': 'Selecciona un equip',
         'select_category': 'Selecciona una categoria',
+        'categories': 'Categories',
+        'matches_tracked': 'Partits registrats',
+        'quick_access': 'Accés ràpid',
+        'calendar': 'Calendari',
+        'view_all_matches': 'Veure tots els partits',
+        'scout_opponents': 'Analitzar rivals',
+        'club_statistics': 'Estadístiques del club',
+        'overall_performance': 'Rendiment general',
+        'current': 'Actual',
+        'basketball_stats': 'Estadístiques de Bàsquet',
 
         # Time
         'last_updated': 'Última actualització',
@@ -235,6 +245,16 @@ translations = {
         'welcome': 'Welcome',
         'select_team': 'Select a team',
         'select_category': 'Select a category',
+        'categories': 'Categories',
+        'matches_tracked': 'Matches tracked',
+        'quick_access': 'Quick access',
+        'calendar': 'Calendar',
+        'view_all_matches': 'View all matches',
+        'scout_opponents': 'Scout opponents',
+        'club_statistics': 'Club statistics',
+        'overall_performance': 'Overall performance',
+        'current': 'Current',
+        'basketball_stats': 'Basketball Stats',
 
         # Time
         'last_updated': 'Last updated',
