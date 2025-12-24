@@ -658,41 +658,268 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .header h1 {
-        font-size: 2rem;
+    /* Base */
+    body {
+        font-size: 14px;
     }
 
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navigation */
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Header */
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Club Header (Home page) */
+    .club-main-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .club-logo-large img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .club-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .club-stats-inline {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .club-stats-inline span:nth-child(even) {
+        display: none; /* Hide the bullet points */
+    }
+
+    /* Season Selector */
+    .season-selector-global {
+        text-align: center;
+        padding: 0.75rem;
+    }
+
+    .season-selector-global select {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Category Headers */
+    .category-header {
+        font-size: 1.2rem;
+    }
+
+    /* Grids */
     .categories-grid {
         grid-template-columns: 1fr;
     }
 
     .teams-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .matches-list {
         grid-template-columns: 1fr;
     }
 
-    .stats-table {
+    /* Team Cards */
+    .team-card {
+        padding: 1rem;
+    }
+
+    .team-card-header h3 {
+        font-size: 1rem;
+    }
+
+    .team-badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .team-quick-stats {
+        flex-direction: column;
+        gap: 0.5rem;
         font-size: 0.85rem;
+    }
+
+    /* Quick Links */
+    .quick-links h2 {
+        font-size: 1.3rem;
+    }
+
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .quick-link-card {
+        padding: 1rem;
+    }
+
+    .quick-link-icon {
+        font-size: 2rem;
+    }
+
+    .quick-link-text h3 {
+        font-size: 1rem;
+    }
+
+    .quick-link-text p {
+        font-size: 0.85rem;
+    }
+
+    /* Tables */
+    .table-container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .stats-table {
+        font-size: 0.75rem;
     }
 
     .stats-table th,
     .stats-table td {
-        padding: 0.5rem;
+        padding: 0.4rem 0.3rem;
     }
 
+    .stats-table th {
+        font-size: 0.7rem;
+    }
+
+    /* Hide less important columns on very small screens */
+    .stats-table td:nth-child(n+6),
+    .stats-table th:nth-child(n+6) {
+        display: none;
+    }
+
+    /* Match Score Board */
     .match-score-board {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .score-team h2 {
+        font-size: 1.1rem;
     }
 
     .score-big {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .score-vs {
+        font-size: 1.5rem;
+    }
+
+    /* Stat Cards */
+    .stats-summary {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
     }
 
     .stat-card h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    /* Club Section */
+    .club-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .club-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .club-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .club-title h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Player Header */
+    .player-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .player-number {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    /* Search */
+    .search-container {
+        margin: 1rem 0;
+    }
+
+    .search-input {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        margin-left: 0.75rem;
+    }
+
+    .club-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .team-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .quick-link-card {
+        flex-direction: column;
+        text-align: center;
     }
 }
