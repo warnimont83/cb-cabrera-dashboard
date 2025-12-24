@@ -2,5 +2,8 @@ Flask
 requests
 beautifulsoup4
 plotly
+pandas
+PyYAML
+python-dotenv
 gunicorn
 lxml
