@@ -1,0 +1,160 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "80336",
+      "team_name": "DEIPA LAMPISTERIA - LA VALLALTA BC",
+      "matches": "11",
+      "wins": "11",
+      "losses": "0",
+      "points_for": "867",
+      "points_against": "726",
+      "total_points": "22",
+      "position": "1"
+    },
+    {
+      "team_id": "79543",
+      "team_name": "ARENYS BÀSQUET",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "748",
+      "points_against": "615",
+      "total_points": "20",
+      "position": "2"
+    },
+    {
+      "team_id": "78516",
+      "team_name": "CB CALELLA B",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "840",
+      "points_against": "747",
+      "total_points": "20",
+      "position": "3"
+    },
+    {
+      "team_id": "79852",
+      "team_name": "SALESIANS BADALONA",
+      "matches": "11",
+      "wins": "8",
+      "losses": "3",
+      "points_for": "857",
+      "points_against": "766",
+      "total_points": "19",
+      "position": "4"
+    },
+    {
+      "team_id": "80651",
+      "team_name": "C.B. PREMIÀ DE DALT DEZERO - SAM",
+      "matches": "11",
+      "wins": "7",
+      "losses": "4",
+      "points_for": "832",
+      "points_against": "729",
+      "total_points": "18",
+      "position": "5"
+    },
+    {
+      "team_id": "81047",
+      "team_name": "A.E.E. COL·LEGI  CULTURAL BDN - A -",
+      "matches": "11",
+      "wins": "7",
+      "losses": "4",
+      "points_for": "865",
+      "points_against": "770",
+      "total_points": "18",
+      "position": "6"
+    },
+    {
+      "team_id": "79131",
+      "team_name": "A.E. BADALONÈS - PINTURAS CORBACHO",
+      "matches": "10",
+      "wins": "5",
+      "losses": "5",
+      "points_for": "753",
+      "points_against": "685",
+      "total_points": "15",
+      "position": "7"
+    },
+    {
+      "team_id": "78937",
+      "team_name": "VUITANTAS - CB SANTA PERPÈTUA",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "748",
+      "points_against": "778",
+      "total_points": "15",
+      "position": "8"
+    },
+    {
+      "team_id": "80408",
+      "team_name": "UB SANT ADRIA C",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "665",
+      "points_against": "771",
+      "total_points": "15",
+      "position": "9"
+    },
+    {
+      "team_id": "79392",
+      "team_name": "CB CABRERA B",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "607",
+      "points_against": "771",
+      "total_points": "15",
+      "position": "10"
+    },
+    {
+      "team_id": "80494",
+      "team_name": "C.B. SANTA COLOMA C",
+      "matches": "10",
+      "wins": "4",
+      "losses": "6",
+      "points_for": "699",
+      "points_against": "688",
+      "total_points": "14",
+      "position": "11"
+    },
+    {
+      "team_id": "78469",
+      "team_name": "C.B. VILANOVA DEL VALLÈS BLAU-MAS DE SANT LLEÍ",
+      "matches": "11",
+      "wins": "2",
+      "losses": "9",
+      "points_for": "691",
+      "points_against": "881",
+      "total_points": "13",
+      "position": "12"
+    },
+    {
+      "team_id": "81034",
+      "team_name": "A.E. TEIÀ",
+      "matches": "10",
+      "wins": "1",
+      "losses": "9",
+      "points_for": "644",
+      "points_against": "731",
+      "total_points": "11",
+      "position": "13"
+    },
+    {
+      "team_id": "79581",
+      "team_name": "CB LA GARRIGA B",
+      "matches": "10",
+      "wins": "0",
+      "losses": "10",
+      "points_for": "550",
+      "points_against": "708",
+      "total_points": "10",
+      "position": "14"
+    }
+  ]
+}

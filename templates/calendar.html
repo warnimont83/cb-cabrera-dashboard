@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <a href="/?season={{ selected_season }}" class="back-link">&larr; Back to home</a>
+    <h1>Match Calendar</h1>
+    <p>All CB Cabrera matches</p>
+
+    <!-- Season Selector -->
+    <div class="season-selector">
+        <label for="seasonSelect">Season:</label>
+        <select id="seasonSelect" onchange="window.location.href='/calendar?season=' + this.value">
+            <option value="all" {% if selected_season == 'all' %}selected{% endif %}>All Seasons</option>
+            {% for season in available_seasons %}
+            <option value="{{ season }}" {% if selected_season == season %}selected{% endif %}>
+                {{ season }} {% if season == current_season %}(Current){% endif %}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<div class="stats-summary">
+    <div class="stat-card">
+        <h3>{{ total_matches }}</h3>
+        <p>Total Matches</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ matches_by_month|length }}</h3>
+        <p>Months</p>
+    </div>
+</div>
+
+<!-- Matches by Month -->
+{% for month_key, month_data in matches_by_month %}
+<div class="month-section">
+    <h2 class="month-header">{{ month_data.name }}</h2>
+    <div class="matches-list">
+        {% for match in month_data.matches %}
+        <a href="/match/{{ match.team_path }}/{{ match.file }}" class="match-card calendar-match">
+            <div class="match-info">
+                <div class="match-date-time">
+                    {{ match.date.split(',')[0] }} {{ match.date.split(',')[1].split('_')[0] }}
+                </div>
+                <div class="match-category-tag">{{ match.cabrera_category }}</div>
+            </div>
+            <div class="match-teams">
+                <div class="match-team {% if 'CABRERA' in match.local_team|upper %}cabrera-team{% endif %}">
+                    <span class="team-name">{{ match.local_team }}</span>
+                    <span class="team-score">{{ match.local_score }}</span>
+                </div>
+                <div class="match-vs">vs</div>
+                <div class="match-team {% if 'CABRERA' in match.visit_team|upper %}cabrera-team{% endif %}">
+                    <span class="team-name">{{ match.visit_team }}</span>
+                    <span class="team-score">{{ match.visit_score }}</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+
+{% if not matches_by_month %}
+<div class="empty-state">
+    <h2>No matches found</h2>
+    <p>No matches available for the selected season</p>
+</div>
+{% endif %}
+
+<style>
+.month-section {
+    margin-bottom: 3rem;
+}
+
+.month-header {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.calendar-match {
+    border-left: 4px solid #e74c3c;
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.match-date-time {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.match-category-tag {
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.cabrera-team {
+    background: #fff3f0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.cabrera-team .team-name {
+    font-weight: 600;
+    color: #e74c3c;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,160 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "69564",
+      "team_name": "C.B CABRERA A",
+      "matches": "26",
+      "wins": "21",
+      "losses": "5",
+      "points_for": "1946",
+      "points_against": "1618",
+      "total_points": "47",
+      "position": "1"
+    },
+    {
+      "team_id": "69459",
+      "team_name": "CB VILASSAR DE DALT",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "132",
+      "points_against": "100",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "70807",
+      "team_name": "AB PREMIÀ",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "134",
+      "points_against": "134",
+      "total_points": "3",
+      "position": "3"
+    },
+    {
+      "team_id": "70676",
+      "team_name": "A.E. SANT ANDREU NATZARET",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "133",
+      "points_against": "140",
+      "total_points": "3",
+      "position": "4"
+    },
+    {
+      "team_id": "70297",
+      "team_name": "CB BESCANO A",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "126",
+      "points_against": "151",
+      "total_points": "3",
+      "position": "5"
+    },
+    {
+      "team_id": "68825",
+      "team_name": "A. BASQUET BUFALÀ TARONJA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "132",
+      "points_against": "139",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "70274",
+      "team_name": "CB SANT GREGORI VALL DE LLÉMENA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "124",
+      "points_against": "133",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "68696",
+      "team_name": "CLÍNICA DENTAL MAVP - CB. CANET",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "128",
+      "points_against": "150",
+      "total_points": "2",
+      "position": "8"
+    },
+    {
+      "team_id": "68416",
+      "team_name": "MONICA RO- AECAM SANTA SUSANNA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "126",
+      "points_against": "155",
+      "total_points": "2",
+      "position": "9"
+    },
+    {
+      "team_id": "69961",
+      "team_name": "C.B. SANT NARCÍS",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "108",
+      "points_against": "146",
+      "total_points": "2",
+      "position": "10"
+    },
+    {
+      "team_id": "68467",
+      "team_name": "MARISTES ADEMAR B",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "118",
+      "points_against": "160",
+      "total_points": "2",
+      "position": "11"
+    },
+    {
+      "team_id": "69920",
+      "team_name": "BÀSQUET VILAFANT",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "114",
+      "points_against": "162",
+      "total_points": "2",
+      "position": "12"
+    },
+    {
+      "team_id": "70990",
+      "team_name": "EL MASNOU BASQUETBOL",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "126",
+      "points_against": "189",
+      "total_points": "2",
+      "position": "13"
+    },
+    {
+      "team_id": "68349",
+      "team_name": "CB QUART ASSISTRANS",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "117",
+      "points_against": "187",
+      "total_points": "2",
+      "position": "14"
+    }
+  ]
+}

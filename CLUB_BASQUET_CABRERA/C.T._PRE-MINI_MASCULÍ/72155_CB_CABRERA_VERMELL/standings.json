@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "72155",
+      "team_name": "CB CABRERA VERMELL",
+      "matches": "13",
+      "wins": "12",
+      "losses": "1",
+      "points_for": "988",
+      "points_against": "442",
+      "total_points": "25",
+      "position": "1"
+    },
+    {
+      "team_id": "70229",
+      "team_name": "U.E. GAUDI-FORUS SARDENYA A",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "103",
+      "points_against": "98",
+      "total_points": "3",
+      "position": "2"
+    },
+    {
+      "team_id": "71441",
+      "team_name": "GRAMENET BC",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "62",
+      "points_against": "102",
+      "total_points": "2",
+      "position": "3"
+    },
+    {
+      "team_id": "70508",
+      "team_name": "CENTRE CATÒLIC L'H",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "81",
+      "points_against": "144",
+      "total_points": "2",
+      "position": "4"
+    },
+    {
+      "team_id": "73891",
+      "team_name": "L'HORT DE L'ÀVIA - E.B. ROSELLA BLANC",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "75",
+      "points_against": "157",
+      "total_points": "2",
+      "position": "5"
+    },
+    {
+      "team_id": "73744",
+      "team_name": "BASKET ESPLUGUES",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "51",
+      "points_against": "171",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "70926",
+      "team_name": "MARISTES ADEMAR",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "37",
+      "points_against": "209",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "73149",
+      "team_name": "BÀSQUET SAFA CLAROR 4",
+      "matches": "1",
+      "wins": "0",
+      "losses": "1",
+      "points_for": "33",
+      "points_against": "107",
+      "total_points": "1",
+      "position": "8"
+    }
+  ]
+}

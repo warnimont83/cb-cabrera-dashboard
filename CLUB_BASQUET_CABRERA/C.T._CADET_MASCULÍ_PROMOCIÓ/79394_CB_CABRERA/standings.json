@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "79394",
+      "team_name": "CB CABRERA",
+      "matches": "10",
+      "wins": "10",
+      "losses": "0",
+      "points_for": "744",
+      "points_against": "423",
+      "total_points": "20",
+      "position": "1"
+    },
+    {
+      "team_id": "81628",
+      "team_name": "AB PREMIÀ BLANC",
+      "matches": "10",
+      "wins": "7",
+      "losses": "3",
+      "points_for": "608",
+      "points_against": "474",
+      "total_points": "17",
+      "position": "2"
+    },
+    {
+      "team_id": "78692",
+      "team_name": "CB. CANET",
+      "matches": "10",
+      "wins": "6",
+      "losses": "4",
+      "points_for": "560",
+      "points_against": "474",
+      "total_points": "16",
+      "position": "3"
+    },
+    {
+      "team_id": "82669",
+      "team_name": "DIN INSTAL·LACIONS - AECAM SANTA SUSANNA",
+      "matches": "10",
+      "wins": "5",
+      "losses": "5",
+      "points_for": "535",
+      "points_against": "566",
+      "total_points": "15",
+      "position": "4"
+    },
+    {
+      "team_id": "79000",
+      "team_name": "EL CÍRCOL B 11",
+      "matches": "10",
+      "wins": "2",
+      "losses": "8",
+      "points_for": "499",
+      "points_against": "627",
+      "total_points": "12",
+      "position": "5"
+    },
+    {
+      "team_id": "83021",
+      "team_name": "CB CALELLA TARONJA",
+      "matches": "10",
+      "wins": "0",
+      "losses": "10",
+      "points_for": "358",
+      "points_against": "740",
+      "total_points": "10",
+      "position": "6"
+    }
+  ]
+}

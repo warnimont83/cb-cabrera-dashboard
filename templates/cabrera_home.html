@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Club Header -->
+<div class="club-main-header">
+    <div class="club-logo-large">
+        <img src="/static/images/clubs/59.jpg" alt="CB Cabrera" onerror="this.src='/static/images/placeholder.png'">
+    </div>
+    <div class="club-info">
+        <h1>Club Bàsquet Cabrera</h1>
+        <p class="club-location">Cabrera de Mar</p>
+        <div class="club-stats-inline">
+            <span>{{ total_categories }} Categories</span>
+            <span>•</span>
+            <span>{{ total_teams }} Teams</span>
+            <span>•</span>
+            <span>{{ total_matches }} Matches Tracked</span>
+        </div>
+    </div>
+</div>
+
+<!-- Season Selector -->
+<div class="season-selector-global">
+    <label for="globalSeasonSelect">Season:</label>
+    <select id="globalSeasonSelect" onchange="window.location.href='/?season=' + this.value">
+        <option value="all" {% if selected_season == 'all' %}selected{% endif %}>All Seasons</option>
+        {% for season in available_seasons %}
+        <option value="{{ season }}" {% if selected_season == season %}selected{% endif %}>
+            {{ season }} {% if season == current_season %}(Current){% endif %}
+        </option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- Teams by Category -->
+<div class="teams-by-category">
+    {% for category_name, teams in teams_by_category %}
+    <div class="category-section">
+        <h2 class="category-header">{{ category_name }}</h2>
+        <div class="teams-grid">
+            {% for team in teams %}
+            <a href="/team/{{ team.path }}?season={{ selected_season }}" class="team-card">
+                <div class="team-card-header">
+                    <h3>{{ team.display_name }}</h3>
+                    <span class="team-badge">{{ team.match_count }} matches</span>
+                </div>
+                <div class="team-quick-stats">
+                    {% if team.record %}
+                    <span class="team-record">{{ team.record.wins }}W - {{ team.record.losses }}L</span>
+                    {% endif %}
+                    <span class="team-players">{{ team.player_count }} players</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Quick Links Section -->
+<div class="quick-links">
+    <h2>Quick Access</h2>
+    <div class="quick-links-grid">
+        <a href="/calendar?season={{ selected_season }}" class="quick-link-card">
+            <div class="quick-link-icon">📅</div>
+            <div class="quick-link-text">
+                <h3>Calendar</h3>
+                <p>View all matches</p>
+            </div>
+        </a>
+        <a href="/rivals?season={{ selected_season }}" class="quick-link-card">
+            <div class="quick-link-icon">🎯</div>
+            <div class="quick-link-text">
+                <h3>Rival Teams</h3>
+                <p>Scout opponents</p>
+            </div>
+        </a>
+        <a href="/stats?season={{ selected_season }}" class="quick-link-card">
+            <div class="quick-link-icon">📊</div>
+            <div class="quick-link-text">
+                <h3>Club Statistics</h3>
+                <p>Overall performance</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+.club-main-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.club-logo-large {
+    flex-shrink: 0;
+}
+
+.club-logo-large img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.club-info h1 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 2rem;
+}
+
+.club-location {
+    color: #666;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+}
+
+.club-stats-inline {
+    display: flex;
+    gap: 1rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.season-selector-global {
+    text-align: right;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.season-selector-global select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.teams-by-category {
+    margin-bottom: 3rem;
+}
+
+.category-section {
+    margin-bottom: 3rem;
+}
+
+.category-header {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.team-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.team-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.team-card-header h3 {
+    margin: 0;
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+.team-badge {
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.team-quick-stats {
+    display: flex;
+    gap: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.team-record {
+    font-weight: 600;
+    color: #333;
+}
+
+.quick-links {
+    margin-top: 3rem;
+}
+
+.quick-links h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.quick-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.quick-link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.quick-link-icon {
+    font-size: 2.5rem;
+}
+
+.quick-link-text h3 {
+    margin: 0 0 0.25rem 0;
+    color: #333;
+}
+
+.quick-link-text p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+</style>
+{% endblock %}

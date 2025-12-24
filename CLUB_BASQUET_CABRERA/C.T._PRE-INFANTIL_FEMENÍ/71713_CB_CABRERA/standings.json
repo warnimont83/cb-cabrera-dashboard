@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "71713",
+      "team_name": "CB CABRERA",
+      "matches": "13",
+      "wins": "11",
+      "losses": "2",
+      "points_for": "654",
+      "points_against": "454",
+      "total_points": "24",
+      "position": "1"
+    },
+    {
+      "team_id": "73172",
+      "team_name": "BASQUET PÀLCAM",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "63",
+      "points_against": "85",
+      "total_points": "3",
+      "position": "2"
+    },
+    {
+      "team_id": "69198",
+      "team_name": "A.E. BADALONÈS",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "81",
+      "points_against": "105",
+      "total_points": "3",
+      "position": "3"
+    },
+    {
+      "team_id": "73942",
+      "team_name": "CB CALELLA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "91",
+      "points_against": "95",
+      "total_points": "2",
+      "position": "4"
+    },
+    {
+      "team_id": "73365",
+      "team_name": "BASQUET NEUS",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "44",
+      "points_against": "74",
+      "total_points": "2",
+      "position": "5"
+    },
+    {
+      "team_id": "72651",
+      "team_name": "MANYANET SANT ANDREU",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "80",
+      "points_against": "132",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "73212",
+      "team_name": "CB LA GARRIGA FEMENÍ 2012",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "63",
+      "points_against": "116",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "71696",
+      "team_name": "CB VILADECANS",
+      "matches": "1",
+      "wins": "0",
+      "losses": "1",
+      "points_for": "32",
+      "points_against": "47",
+      "total_points": "1",
+      "position": "8"
+    }
+  ]
+}

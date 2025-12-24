@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <a href="/team/{{ team_path }}" class="back-link">&larr; Back to team</a>
+    <h1>Match Details</h1>
+    <p>{{ match_data.time }}</p>
+</div>
+
+<div class="match-score-board">
+    <div class="score-team">
+        <h2>{{ local_team.name }}</h2>
+        <div class="score-big">{{ final_score.local }}</div>
+    </div>
+    <div class="score-vs">VS</div>
+    <div class="score-team">
+        <h2>{{ visit_team.name }}</h2>
+        <div class="score-big">{{ final_score.visit }}</div>
+    </div>
+</div>
+
+<!-- Local Team Stats -->
+<div class="table-container">
+    <h2>{{ local_team.name }} - Player Statistics</h2>
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player</th>
+                <th>Min</th>
+                <th>Pts</th>
+                <th>FT</th>
+                <th>2PT</th>
+                <th>3PT</th>
+                <th>Reb</th>
+                <th>Ast</th>
+                <th>Stl</th>
+                <th>Blk</th>
+                <th>Fouls</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in local_team.players %}
+            <tr>
+                <td>{{ player.dorsal }}</td>
+                <td><strong>{{ player.name }}</strong></td>
+                <td>{{ player.timePlayed }}</td>
+                <td>{{ player.data.score }}</td>
+                <td>{{ player.data.shotsOfOneSuccessful }}/{{ player.data.shotsOfOneAttempted }}</td>
+                <td>{{ player.data.shotsOfTwoSuccessful }}/{{ player.data.shotsOfTwoAttempted }}</td>
+                <td>{{ player.data.shotsOfThreeSuccessful }}/{{ player.data.shotsOfThreeAttempted }}</td>
+                <td>{{ player.data.rebounds }}</td>
+                <td>{{ player.data.assists }}</td>
+                <td>{{ player.data.get('steals', 0) }}</td>
+                <td>{{ player.data.get('blocks', 0) }}</td>
+                <td>{{ player.data.faults }}</td>
+                <td>{{ player.data.valoration }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Visiting Team Stats -->
+<div class="table-container">
+    <h2>{{ visit_team.name }} - Player Statistics</h2>
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player</th>
+                <th>Min</th>
+                <th>Pts</th>
+                <th>FT</th>
+                <th>2PT</th>
+                <th>3PT</th>
+                <th>Reb</th>
+                <th>Ast</th>
+                <th>Stl</th>
+                <th>Blk</th>
+                <th>Fouls</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in visit_team.players %}
+            <tr>
+                <td>{{ player.dorsal }}</td>
+                <td><strong>{{ player.name }}</strong></td>
+                <td>{{ player.timePlayed }}</td>
+                <td>{{ player.data.score }}</td>
+                <td>{{ player.data.shotsOfOneSuccessful }}/{{ player.data.shotsOfOneAttempted }}</td>
+                <td>{{ player.data.shotsOfTwoSuccessful }}/{{ player.data.shotsOfTwoAttempted }}</td>
+                <td>{{ player.data.shotsOfThreeSuccessful }}/{{ player.data.shotsOfThreeAttempted }}</td>
+                <td>{{ player.data.rebounds }}</td>
+                <td>{{ player.data.assists }}</td>
+                <td>{{ player.data.get('steals', 0) }}</td>
+                <td>{{ player.data.get('blocks', 0) }}</td>
+                <td>{{ player.data.faults }}</td>
+                <td>{{ player.data.valoration }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

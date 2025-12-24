@@ -1,0 +1,61 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "78751",
+      "team_name": "JOVENTUT BADALONA 4",
+      "matches": "8",
+      "wins": "7",
+      "losses": "1",
+      "points_for": "537",
+      "points_against": "323",
+      "total_points": "15",
+      "position": "1"
+    },
+    {
+      "team_id": "83534",
+      "team_name": "C.B. CABRILS",
+      "matches": "7",
+      "wins": "5",
+      "losses": "2",
+      "points_for": "470",
+      "points_against": "333",
+      "total_points": "12",
+      "position": "2"
+    },
+    {
+      "team_id": "79393",
+      "team_name": "CB CABRERA",
+      "matches": "7",
+      "wins": "4",
+      "losses": "3",
+      "points_for": "406",
+      "points_against": "377",
+      "total_points": "11",
+      "position": "3"
+    },
+    {
+      "team_id": "83811",
+      "team_name": "XURRERIA PALAU ACB PALAU",
+      "matches": "7",
+      "wins": "2",
+      "losses": "5",
+      "points_for": "376",
+      "points_against": "457",
+      "total_points": "9",
+      "position": "4"
+    },
+    {
+      "team_id": "78699",
+      "team_name": "CB. CANET BLANC",
+      "matches": "7",
+      "wins": "0",
+      "losses": "7",
+      "points_for": "214",
+      "points_against": "513",
+      "total_points": "7",
+      "position": "5"
+    }
+  ]
+}

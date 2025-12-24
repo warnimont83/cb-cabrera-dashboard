@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "82075",
+      "team_name": "UE SANT ANDREU VERMELL",
+      "matches": "10",
+      "wins": "10",
+      "losses": "0",
+      "points_for": "723",
+      "points_against": "463",
+      "total_points": "20",
+      "position": "1"
+    },
+    {
+      "team_id": "78559",
+      "team_name": "AULA ESCOLA EUROPEA",
+      "matches": "10",
+      "wins": "7",
+      "losses": "3",
+      "points_for": "654",
+      "points_against": "583",
+      "total_points": "17",
+      "position": "2"
+    },
+    {
+      "team_id": "82469",
+      "team_name": "SALESIANS BADALONA",
+      "matches": "9",
+      "wins": "6",
+      "losses": "3",
+      "points_for": "595",
+      "points_against": "536",
+      "total_points": "15",
+      "position": "3"
+    },
+    {
+      "team_id": "80809",
+      "team_name": "CLUB ESPORTIU DIAGONAL MAR B",
+      "matches": "10",
+      "wins": "2",
+      "losses": "8",
+      "points_for": "623",
+      "points_against": "679",
+      "total_points": "12",
+      "position": "4"
+    },
+    {
+      "team_id": "78888",
+      "team_name": "C.B. VILASSAR DE MAR  1984",
+      "matches": "10",
+      "wins": "2",
+      "losses": "8",
+      "points_for": "555",
+      "points_against": "809",
+      "total_points": "12",
+      "position": "5"
+    },
+    {
+      "team_id": "79385",
+      "team_name": "CB CABRERA VERMELL",
+      "matches": "9",
+      "wins": "2",
+      "losses": "7",
+      "points_for": "454",
+      "points_against": "534",
+      "total_points": "11",
+      "position": "6"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "78727",
+      "team_name": "CB MOLLET A",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "857",
+      "points_against": "630",
+      "total_points": "20",
+      "position": "1"
+    },
+    {
+      "team_id": "78622",
+      "team_name": "SANT GERVASI S20",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "760",
+      "points_against": "620",
+      "total_points": "20",
+      "position": "2"
+    },
+    {
+      "team_id": "82622",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U20",
+      "matches": "11",
+      "wins": "8",
+      "losses": "3",
+      "points_for": "854",
+      "points_against": "595",
+      "total_points": "19",
+      "position": "3"
+    },
+    {
+      "team_id": "79390",
+      "team_name": "CB CABRERA",
+      "matches": "10",
+      "wins": "7",
+      "losses": "3",
+      "points_for": "745",
+      "points_against": "667",
+      "total_points": "17",
+      "position": "4"
+    },
+    {
+      "team_id": "81982",
+      "team_name": "U.E. CLARET C",
+      "matches": "10",
+      "wins": "7",
+      "losses": "3",
+      "points_for": "716",
+      "points_against": "657",
+      "total_points": "17",
+      "position": "5"
+    },
+    {
+      "team_id": "79938",
+      "team_name": "CB LES FRANQUESES S20 M-INGRUP",
+      "matches": "11",
+      "wins": "5",
+      "losses": "6",
+      "points_for": "688",
+      "points_against": "727",
+      "total_points": "16",
+      "position": "6"
+    },
+    {
+      "team_id": "80925",
+      "team_name": "CB. CORNELLÀ",
+      "matches": "10",
+      "wins": "5",
+      "losses": "5",
+      "points_for": "728",
+      "points_against": "731",
+      "total_points": "15",
+      "position": "7"
+    },
+    {
+      "team_id": "80398",
+      "team_name": "UB SANT ADRIA B",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "728",
+      "points_against": "773",
+      "total_points": "15",
+      "position": "8"
+    },
+    {
+      "team_id": "82209",
+      "team_name": "LA FORMIGUETA - AECAM SANTA SUSANNA",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "709",
+      "points_against": "808",
+      "total_points": "15",
+      "position": "9"
+    },
+    {
+      "team_id": "81143",
+      "team_name": "CB SANTA PERPETUA",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "631",
+      "points_against": "756",
+      "total_points": "15",
+      "position": "10"
+    },
+    {
+      "team_id": "80649",
+      "team_name": "C.B. PREMIÀ DE DALT - S20",
+      "matches": "10",
+      "wins": "2",
+      "losses": "8",
+      "points_for": "539",
+      "points_against": "733",
+      "total_points": "12",
+      "position": "11"
+    },
+    {
+      "team_id": "79571",
+      "team_name": "FUNDACIÓN PHILIPPE COUSTEAU  CEJ L'H VERD",
+      "matches": "11",
+      "wins": "0",
+      "losses": "11",
+      "points_for": "580",
+      "points_against": "838",
+      "total_points": "11",
+      "position": "12"
+    }
+  ]
+}

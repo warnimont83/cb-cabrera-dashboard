@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "80254",
+      "team_name": "CB PEDAGOGIUM VERD",
+      "matches": "7",
+      "wins": "7",
+      "losses": "0",
+      "points_for": "405",
+      "points_against": "125",
+      "total_points": "14",
+      "position": "1"
+    },
+    {
+      "team_id": "83170",
+      "team_name": "CB SANT JUST U09",
+      "matches": "9",
+      "wins": "5",
+      "losses": "4",
+      "points_for": "325",
+      "points_against": "316",
+      "total_points": "14",
+      "position": "2"
+    },
+    {
+      "team_id": "79835",
+      "team_name": "U. B. LLEFIÀ B",
+      "matches": "7",
+      "wins": "5",
+      "losses": "2",
+      "points_for": "378",
+      "points_against": "172",
+      "total_points": "12",
+      "position": "3"
+    },
+    {
+      "team_id": "82474",
+      "team_name": "DOMINIQUES BARCELONA",
+      "matches": "8",
+      "wins": "4",
+      "losses": "4",
+      "points_for": "275",
+      "points_against": "295",
+      "total_points": "12",
+      "position": "4"
+    },
+    {
+      "team_id": "83298",
+      "team_name": "MANYANET SANT ANDREU MIXTE",
+      "matches": "8",
+      "wins": "3",
+      "losses": "5",
+      "points_for": "284",
+      "points_against": "243",
+      "total_points": "11",
+      "position": "5"
+    },
+    {
+      "team_id": "81645",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "9",
+      "wins": "0",
+      "losses": "9",
+      "points_for": "155",
+      "points_against": "671",
+      "total_points": "9",
+      "position": "6"
+    }
+  ]
+}

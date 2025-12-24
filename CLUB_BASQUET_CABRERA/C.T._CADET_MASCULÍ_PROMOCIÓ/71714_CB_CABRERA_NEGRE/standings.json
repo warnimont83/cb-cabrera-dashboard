@@ -1,0 +1,83 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "71714",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "12",
+      "wins": "2",
+      "losses": "10",
+      "points_for": "636",
+      "points_against": "823",
+      "total_points": "14",
+      "position": "1"
+    },
+    {
+      "team_id": "68877",
+      "team_name": "C.B.VILASSAR DE MAR 1984",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "165",
+      "points_against": "71",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "68704",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U16B",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "178",
+      "points_against": "122",
+      "total_points": "4",
+      "position": "3"
+    },
+    {
+      "team_id": "70741",
+      "team_name": "C.B. SANTA COLOMA B",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "137",
+      "points_against": "107",
+      "total_points": "4",
+      "position": "4"
+    },
+    {
+      "team_id": "70977",
+      "team_name": "EL MASNOU BASQUETBOL B",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "124",
+      "points_against": "109",
+      "total_points": "4",
+      "position": "5"
+    },
+    {
+      "team_id": "72755",
+      "team_name": "C.B. CABRILS",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "109",
+      "points_against": "111",
+      "total_points": "3",
+      "position": "6"
+    },
+    {
+      "team_id": "73414",
+      "team_name": "REFORMIT ARENYS BÀSQUET BLANC",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "110",
+      "points_against": "116",
+      "total_points": "3",
+      "position": "7"
+    }
+  ]
+}

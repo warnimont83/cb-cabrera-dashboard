@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <h1>Basketball Clubs</h1>
+    <p>Search for your club to view statistics</p>
+</div>
+
+<!-- Search Box -->
+<div class="search-container">
+    <input type="text"
+           id="clubSearch"
+           class="search-input"
+           placeholder="Search for a club... (e.g., Cabrera, Gramenet)"
+           autocomplete="off">
+    <div id="searchResults" class="search-results"></div>
+</div>
+
+<div class="stats-summary">
+    <div class="stat-card">
+        <h3>{{ total_clubs }}</h3>
+        <p>Clubs</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ total_teams }}</h3>
+        <p>Teams</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ total_matches }}</h3>
+        <p>Matches</p>
+    </div>
+</div>
+
+<div id="clubsContainer" class="clubs-container">
+    {% for club_name, club_data in structure.items() %}
+    <div class="club-section" data-club-name="{{ club_name|lower }}">
+        <div class="club-header">
+            <div class="club-header-content">
+                {% if club_data.club_id %}
+                <img src="/static/images/clubs/{{ club_data.club_id }}.jpg"
+                     alt="{{ club_name }}"
+                     class="club-logo"
+                     onerror="this.style.display='none'">
+                {% endif %}
+
+                <div class="club-title">
+                    <h2><a href="/club/{{ club_name }}">{{ club_name.replace('_', ' ') }}</a></h2>
+                    {% set total_teams = namespace(count=0) %}
+                    {% for category in club_data.categories.values() %}
+                        {% set total_teams.count = total_teams.count + category.teams|length %}
+                    {% endfor %}
+                    <p>{{ club_data.categories|length }} categories • {{ total_teams.count }} teams</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories-preview">
+            {% for category_name, category_data in club_data.categories.items() %}
+            {% if category_data.teams %}
+            <div class="category-tag">
+                <span>{{ category_name }}</span>
+                <span class="team-count-badge">{{ category_data.teams|length }}</span>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% if not structure %}
+<div class="empty-state">
+    <h2>No clubs found</h2>
+    <p>Run the scraper to collect data</p>
+</div>
+{% endif %}
+
+<script>
+// Club search functionality
+const searchInput = document.getElementById('clubSearch');
+const clubsContainer = document.getElementById('clubsContainer');
+const clubSections = document.querySelectorAll('.club-section');
+
+searchInput.addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase().trim();
+
+    clubSections.forEach(section => {
+        const clubName = section.getAttribute('data-club-name');
+
+        if (searchTerm === '' || clubName.includes(searchTerm)) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+
+    // Show message if no results
+    const visibleClubs = Array.from(clubSections).filter(s => s.style.display !== 'none');
+
+    if (visibleClubs.length === 0 && searchTerm !== '') {
+        if (!document.getElementById('noResults')) {
+            const noResults = document.createElement('div');
+            noResults.id = 'noResults';
+            noResults.className = 'empty-state';
+            noResults.innerHTML = '<h2>No clubs found</h2><p>Try a different search term</p>';
+            clubsContainer.appendChild(noResults);
+        }
+    } else {
+        const noResults = document.getElementById('noResults');
+        if (noResults) noResults.remove();
+    }
+});
+
+// Focus search on page load
+searchInput.focus();
+</script>
+{% endblock %}

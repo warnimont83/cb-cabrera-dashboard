@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <a href="/team/{{ team_path }}?season={{ selected_season }}" class="back-link">&larr; Back to team</a>
+    <div class="player-header">
+        <div class="player-number">#{{ player_dorsal }}</div>
+        <div>
+            <h1>{{ player_name }}</h1>
+            <p>{{ team_info.club }} - {{ team_info.category }}</p>
+        </div>
+    </div>
+
+    <!-- Season Selector -->
+    <div class="season-selector">
+        <label for="seasonSelect">Season:</label>
+        <select id="seasonSelect" onchange="window.location.href='?season=' + this.value">
+            <option value="all" {% if selected_season == 'all' %}selected{% endif %}>All Seasons</option>
+            {% for season in available_seasons %}
+            <option value="{{ season }}" {% if selected_season == season %}selected{% endif %}>
+                {{ season }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+{% if totals %}
+<!-- Player Season Totals -->
+<div class="stats-summary">
+    <div class="stat-card">
+        <h3>{{ totals.games }}</h3>
+        <p>Games Played</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ totals.total_points }}</h3>
+        <p>Total Points</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ totals.avg_points }}</h3>
+        <p>PPG</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ totals.total_minutes }}</h3>
+        <p>Total Minutes</p>
+    </div>
+</div>
+
+<!-- Player Averages -->
+<div class="table-container">
+    <h2>Season Averages ({{ selected_season }})</h2>
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>PPG</th>
+                <th>MPG</th>
+                <th>Fouls/G</th>
+                <th>Reb/G</th>
+                <th>Ast/G</th>
+                <th>FT%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ totals.avg_points }}</td>
+                <td>{{ totals.avg_minutes }}</td>
+                <td>{{ totals.avg_fouls }}</td>
+                <td>{{ totals.avg_rebounds }}</td>
+                <td>{{ totals.avg_assists }}</td>
+                <td>{{ totals.ft_percentage }}%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Game-by-Game Stats -->
+<div class="table-container">
+    <h2>Game-by-Game Statistics</h2>
+    <table class="stats-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Opponent</th>
+                <th>Score</th>
+                <th>Min</th>
+                <th>Pts</th>
+                <th>FT</th>
+                <th>2PT</th>
+                <th>3PT</th>
+                <th>Reb</th>
+                <th>Ast</th>
+                <th>Fouls</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in player_games %}
+            <tr>
+                <td>{{ game.date }}</td>
+                <td>vs {{ game.opponent }}</td>
+                <td>{{ game.score }}</td>
+                <td>{{ game.minutes }}</td>
+                <td><strong>{{ game.points }}</strong></td>
+                <td>{{ game.ft_made }}/{{ game.ft_attempted }}</td>
+                <td>{{ game['2pt_made'] }}/{{ game['2pt_attempted'] }}</td>
+                <td>{{ game['3pt_made'] }}/{{ game['3pt_attempted'] }}</td>
+                <td>{{ game.rebounds }}</td>
+                <td>{{ game.assists }}</td>
+                <td>{{ game.fouls }}</td>
+                <td>{{ game.valoration }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% else %}
+<div class="empty-state">
+    <h2>No statistics available</h2>
+    <p>This player has no recorded games in the selected season</p>
+</div>
+{% endif %}
+
+{% endblock %}

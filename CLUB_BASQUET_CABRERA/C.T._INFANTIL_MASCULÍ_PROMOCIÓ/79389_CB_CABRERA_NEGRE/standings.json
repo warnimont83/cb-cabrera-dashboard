@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "81401",
+      "team_name": "CB VILA DE MONTORNÈS",
+      "matches": "10",
+      "wins": "9",
+      "losses": "1",
+      "points_for": "851",
+      "points_against": "371",
+      "total_points": "19",
+      "position": "1"
+    },
+    {
+      "team_id": "83801",
+      "team_name": "C.B. LLINARS",
+      "matches": "10",
+      "wins": "6",
+      "losses": "4",
+      "points_for": "636",
+      "points_against": "569",
+      "total_points": "16",
+      "position": "2"
+    },
+    {
+      "team_id": "79389",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "9",
+      "wins": "5",
+      "losses": "4",
+      "points_for": "542",
+      "points_against": "552",
+      "total_points": "14",
+      "position": "3"
+    },
+    {
+      "team_id": "81561",
+      "team_name": "UB MIR",
+      "matches": "10",
+      "wins": "4",
+      "losses": "6",
+      "points_for": "488",
+      "points_against": "582",
+      "total_points": "14",
+      "position": "4"
+    },
+    {
+      "team_id": "84131",
+      "team_name": "BÀSQUET ALELLA",
+      "matches": "10",
+      "wins": "3",
+      "losses": "7",
+      "points_for": "455",
+      "points_against": "653",
+      "total_points": "13",
+      "position": "5"
+    },
+    {
+      "team_id": "82620",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U14M",
+      "matches": "9",
+      "wins": "2",
+      "losses": "7",
+      "points_for": "357",
+      "points_against": "602",
+      "total_points": "11",
+      "position": "6"
+    }
+  ]
+}

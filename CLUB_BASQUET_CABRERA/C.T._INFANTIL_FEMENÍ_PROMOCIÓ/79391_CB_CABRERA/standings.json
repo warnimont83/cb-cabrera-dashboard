@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "82451",
+      "team_name": "BÀSQUET SAFA CLAROR",
+      "matches": "10",
+      "wins": "9",
+      "losses": "1",
+      "points_for": "634",
+      "points_against": "460",
+      "total_points": "19",
+      "position": "1"
+    },
+    {
+      "team_id": "81607",
+      "team_name": "GYMNOS - AECAM MALGRAT",
+      "matches": "10",
+      "wins": "9",
+      "losses": "1",
+      "points_for": "574",
+      "points_against": "426",
+      "total_points": "19",
+      "position": "2"
+    },
+    {
+      "team_id": "81419",
+      "team_name": "UER PINEDA DE MAR",
+      "matches": "10",
+      "wins": "5",
+      "losses": "5",
+      "points_for": "463",
+      "points_against": "461",
+      "total_points": "15",
+      "position": "3"
+    },
+    {
+      "team_id": "79391",
+      "team_name": "CB CABRERA",
+      "matches": "10",
+      "wins": "4",
+      "losses": "6",
+      "points_for": "564",
+      "points_against": "472",
+      "total_points": "14",
+      "position": "4"
+    },
+    {
+      "team_id": "83914",
+      "team_name": "LIMA-HORTA BARCELONA",
+      "matches": "10",
+      "wins": "2",
+      "losses": "8",
+      "points_for": "433",
+      "points_against": "658",
+      "total_points": "12",
+      "position": "5"
+    },
+    {
+      "team_id": "80185",
+      "team_name": "JOVENTUT BADALONA VERD",
+      "matches": "10",
+      "wins": "1",
+      "losses": "9",
+      "points_for": "337",
+      "points_against": "528",
+      "total_points": "11",
+      "position": "6"
+    }
+  ]
+}

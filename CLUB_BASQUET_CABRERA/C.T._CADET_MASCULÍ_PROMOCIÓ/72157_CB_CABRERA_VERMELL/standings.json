@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "72157",
+      "team_name": "CB CABRERA VERMELL",
+      "matches": "14",
+      "wins": "8",
+      "losses": "6",
+      "points_for": "811",
+      "points_against": "828",
+      "total_points": "22",
+      "position": "1"
+    },
+    {
+      "team_id": "73941",
+      "team_name": "CB CALELLA TARONJA",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "150",
+      "points_against": "106",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "70925",
+      "team_name": "MARISTES ADEMAR",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "112",
+      "points_against": "93",
+      "total_points": "4",
+      "position": "3"
+    },
+    {
+      "team_id": "68741",
+      "team_name": "CB MOLLET B",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "138",
+      "points_against": "124",
+      "total_points": "3",
+      "position": "4"
+    },
+    {
+      "team_id": "73551",
+      "team_name": "CANOVELLES BC 2",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "125",
+      "points_against": "134",
+      "total_points": "3",
+      "position": "5"
+    },
+    {
+      "team_id": "69458",
+      "team_name": "CB VILASSAR DE DALT VERD",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "101",
+      "points_against": "110",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "73967",
+      "team_name": "SANT QUIRZE BÀSQUET CLUB A",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "81",
+      "points_against": "96",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "69407",
+      "team_name": "CB CERDANYOLA AL DIA C",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "121",
+      "points_against": "148",
+      "total_points": "2",
+      "position": "8"
+    }
+  ]
+}

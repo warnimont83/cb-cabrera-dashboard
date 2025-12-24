@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "71712",
+      "team_name": "CB CABRERA",
+      "matches": "14",
+      "wins": "3",
+      "losses": "11",
+      "points_for": "568",
+      "points_against": "874",
+      "total_points": "17",
+      "position": "1"
+    },
+    {
+      "team_id": "72511",
+      "team_name": "VEDRUNA GRÀCIA",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "149",
+      "points_against": "48",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "69163",
+      "team_name": "UE SANT ANDREU VERMELL",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "136",
+      "points_against": "66",
+      "total_points": "4",
+      "position": "3"
+    },
+    {
+      "team_id": "71425",
+      "team_name": "GRAMENET BC",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "139",
+      "points_against": "69",
+      "total_points": "4",
+      "position": "4"
+    },
+    {
+      "team_id": "73586",
+      "team_name": "QBASKET SANT CUGAT NEGRE",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "123",
+      "points_against": "75",
+      "total_points": "4",
+      "position": "5"
+    },
+    {
+      "team_id": "73447",
+      "team_name": "C.B.COLL",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "132",
+      "points_against": "110",
+      "total_points": "3",
+      "position": "6"
+    },
+    {
+      "team_id": "70225",
+      "team_name": "U.E. GAUDI-FORUS SARDENYA",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "98",
+      "points_against": "84",
+      "total_points": "3",
+      "position": "7"
+    },
+    {
+      "team_id": "71642",
+      "team_name": "A.E. TEIÀ",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "97",
+      "points_against": "116",
+      "total_points": "3",
+      "position": "8"
+    }
+  ]
+}

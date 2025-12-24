@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "72156",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "14",
+      "wins": "10",
+      "losses": "4",
+      "points_for": "723",
+      "points_against": "617",
+      "total_points": "24",
+      "position": "1"
+    },
+    {
+      "team_id": "72413",
+      "team_name": "CB TORELLÓ - PM VERMELL",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "118",
+      "points_against": "56",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "71473",
+      "team_name": "REGALS PALOU ACB PALAU",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "135",
+      "points_against": "100",
+      "total_points": "4",
+      "position": "3"
+    },
+    {
+      "team_id": "70314",
+      "team_name": "CB RIPOLLET VERMELL MIXTE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "98",
+      "points_against": "105",
+      "total_points": "2",
+      "position": "4"
+    },
+    {
+      "team_id": "71010",
+      "team_name": "C.E. MARISTES RUBÍ",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "89",
+      "points_against": "97",
+      "total_points": "2",
+      "position": "5"
+    },
+    {
+      "team_id": "68755",
+      "team_name": "JOVENTUT BADALONA 4",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "67",
+      "points_against": "103",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "70980",
+      "team_name": "EL MASNOU BASQUETBOL",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "68",
+      "points_against": "112",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "73925",
+      "team_name": "CB LES FRANQUESES NEGRE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "42",
+      "points_against": "150",
+      "total_points": "2",
+      "position": "8"
+    }
+  ]
+}

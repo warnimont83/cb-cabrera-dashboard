@@ -1,0 +1,61 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "83050",
+      "team_name": "CB CARDEDEU RODELEM - VERMELL",
+      "matches": "8",
+      "wins": "6",
+      "losses": "2",
+      "points_for": "606",
+      "points_against": "441",
+      "total_points": "14",
+      "position": "1"
+    },
+    {
+      "team_id": "82638",
+      "team_name": "CB PARETS VERMELL",
+      "matches": "8",
+      "wins": "5",
+      "losses": "3",
+      "points_for": "526",
+      "points_against": "544",
+      "total_points": "13",
+      "position": "2"
+    },
+    {
+      "team_id": "81606",
+      "team_name": "NETEGES ESCOBAR - AECAM MALGRAT",
+      "matches": "8",
+      "wins": "4",
+      "losses": "4",
+      "points_for": "497",
+      "points_against": "495",
+      "total_points": "12",
+      "position": "3"
+    },
+    {
+      "team_id": "81385",
+      "team_name": "CB CABRERA VERMELL",
+      "matches": "8",
+      "wins": "3",
+      "losses": "5",
+      "points_for": "453",
+      "points_against": "487",
+      "total_points": "11",
+      "position": "4"
+    },
+    {
+      "team_id": "82618",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U11M",
+      "matches": "8",
+      "wins": "2",
+      "losses": "6",
+      "points_for": "427",
+      "points_against": "542",
+      "total_points": "10",
+      "position": "5"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+# Basketball Statistics Scraper Configuration
+
+# Default settings
+default_phase: "tot"  # Options: fase1, fase2, tot
+
+# Clubs and teams to track
+clubs:
+  - name: "CLUB_BASQUET_CABRERA"
+    id: 59
+    teams:
+      # Senior Teams
+      - id: 79387
+        name: "CB Cabrera A"
+        category: "C.C. Primera Categoria Masculina"
+      - id: 79392
+        name: "CB Cabrera B"
+        category: "2A. Territorial Sènior Masculí"
+      - id: 79388
+        name: "CB Cabrera"
+        category: "2A. Territorial Sènior Femení"
+
+      # Youth Teams
+      - id: 79390
+        name: "CB Cabrera"
+        category: "C.C. Sots-20 Masculí Nivell A-1"
+      - id: 79386
+        name: "CB Cabrera Vermell"
+        category: "C.C. Júnior Masculí Nivell A"
+      - id: 79395
+        name: "CB Cabrera Negre"
+        category: "C.T. Júnior Masculí Promoció"
+      - id: 79394
+        name: "CB Cabrera"
+        category: "C.T. Cadet Masculí Promoció"
+
+      # Infantil Teams
+      - id: 79385
+        name: "CB Cabrera Vermell"
+        category: "C.T. Infantil Masculí Promoció"
+      - id: 79389
+        name: "CB Cabrera Negre"
+        category: "C.T. Infantil Masculí Promoció"
+      - id: 79391
+        name: "CB Cabrera"
+        category: "C.T. Infantil Femení Promoció"
+
+      # Mini Teams
+      - id: 79393
+        name: "CB Cabrera"
+        category: "C.T. Mini Masculí"
+      - id: 81385
+        name: "CB Cabrera Vermell"
+        category: "C.T. Mini Masculí 1r. Any"
+      - id: 81386
+        name: "CB Cabrera Negre"
+        category: "C.T. Mini Masculí 1r. Any"
+
+      # Pre-Mini Teams
+      - id: 81644
+        name: "CB Cabrera Vermell"
+        category: "C.T. Pre-Mini Masculí 1r. Any"
+      - id: 81645
+        name: "CB Cabrera Negre"
+        category: "C.T. Pre-Mini Masculí 1r. Any"
+
+      # ESCOBOL
+      - id: 84804
+        name: "CB Cabrera"
+        category: "ESCOBOL (Lliga)"
+
+  # Add more clubs here as needed
+  # - name: "Another Club"
+  #   id: 123
+  #   teams:
+  #     - id: 456
+  #       name: "Team Name"
+  #       category: "CATEGORY"
+
+# Scraping settings
+scraping:
+  base_url: "https://www.basquetcatala.cat"
+  api_url: "https://msstats.optimalwayconsulting.com/v1/fcbq"
+  timeout: 10  # seconds
+  skip_downloads: false
+  skip_id_checks: false
+
+# Excel generation settings
+excel:
+  decimal_places: 1
+  generate_totals: true
+  generate_averages: true
+  generate_individual_matches: true
+
+# Web dashboard settings (for future implementation)
+web:
+  enabled: false
+  host: "0.0.0.0"
+  port: 8080
+  title: "Basketball Statistics Dashboard"

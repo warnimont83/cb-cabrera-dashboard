@@ -1,0 +1,284 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+    <a href="/rivals?season={{ selected_season }}" class="back-link">&larr; Back to rivals</a>
+    <div class="rival-header">
+        <div class="rival-badge">🎯</div>
+        <div>
+            <h1>{{ rival_name }}</h1>
+            <p class="rival-subtitle">Opponent Team Analysis</p>
+        </div>
+    </div>
+</div>
+
+{% if is_scraped == False %}
+<div class="warning-banner">
+    <strong>⚠️ Limited Data:</strong> This shows only matches against CB Cabrera teams.
+    To see this rival's complete statistics (all matches, full league standings), run:
+    <code>python3 scrape_rivals.py {{ from_team }} tot</code>
+</div>
+{% endif %}
+
+<div class="stats-summary">
+    <div class="stat-card">
+        <h3>{{ match_count }}</h3>
+        <p>Matches Against Us</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ players|length }}</h3>
+        <p>Players Tracked</p>
+    </div>
+    <div class="stat-card">
+        <h3>{{ players|sum(attribute='total_points') }}</h3>
+        <p>Total Points Scored</p>
+    </div>
+</div>
+
+{% if players %}
+<!-- Player Statistics -->
+<div class="table-container">
+    <h2>Player Statistics - {{ rival_name }}</h2>
+    <p class="table-description">Scout key players from this rival team</p>
+    <table class="stats-table sortable" id="rivalPlayersTable">
+        <thead>
+            <tr>
+                <th data-sort="dorsal">#</th>
+                <th data-sort="name">Player</th>
+                <th data-sort="games">Games</th>
+                <th data-sort="total_points">Pts</th>
+                <th data-sort="avg_points">PPG</th>
+                <th data-sort="avg_minutes">MPG</th>
+                {% if has_rebounds %}<th data-sort="avg_rebounds">Reb/G</th>{% endif %}
+                {% if has_assists %}<th data-sort="avg_assists">Ast/G</th>{% endif %}
+                <th data-sort="total_fouls">Fouls</th>
+                <th data-sort="ft_percentage">FT%</th>
+                {% if has_fg_stats %}<th data-sort="fg_percentage">FG%</th>{% endif %}
+                <th data-sort="avg_valoration">Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in players %}
+            <tr>
+                <td data-value="{{ player.dorsal }}">{{ player.dorsal }}</td>
+                <td data-value="{{ player.name }}">
+                    <strong>{{ player.name }}</strong>
+                </td>
+                <td data-value="{{ player.games }}">{{ player.games }}</td>
+                <td data-value="{{ player.total_points }}">{{ player.total_points }}</td>
+                <td data-value="{{ player.avg_points }}">
+                    <span class="highlight-stat">{{ player.avg_points }}</span>
+                </td>
+                <td data-value="{{ player.avg_minutes }}">{{ player.avg_minutes }}</td>
+                {% if has_rebounds %}<td data-value="{{ player.avg_rebounds }}">{{ player.avg_rebounds }}</td>{% endif %}
+                {% if has_assists %}<td data-value="{{ player.avg_assists }}">{{ player.avg_assists }}</td>{% endif %}
+                <td data-value="{{ player.total_fouls }}">{{ player.total_fouls }}</td>
+                <td data-value="{{ player.ft_percentage }}">{{ player.ft_percentage }}%</td>
+                {% if has_fg_stats %}<td data-value="{{ player.fg_percentage }}">{{ player.fg_percentage }}%</td>{% endif %}
+                <td data-value="{{ player.avg_valoration }}">{{ player.avg_valoration }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Match History -->
+<div class="table-container">
+    <h2>Match History Against {{ rival_name }}</h2>
+    <div class="matches-list">
+        {% for match in matches %}
+        <a href="/match/{{ match.team_path }}/{{ match.file }}" class="match-card rival-match">
+            <div class="match-header-info">
+                <div class="match-date">{{ match.date.split('_')[0] }}</div>
+                <div class="match-category-tag">{{ match.cabrera_category }}</div>
+            </div>
+            <div class="match-teams">
+                <div class="match-team {% if 'CABRERA' in match.local_team|upper %}cabrera-highlight{% endif %}">
+                    <span class="team-name">{{ match.local_team }}</span>
+                    <span class="team-score">{{ match.local_score }}</span>
+                </div>
+                <div class="match-vs">vs</div>
+                <div class="match-team {% if 'CABRERA' in match.visit_team|upper %}cabrera-highlight{% endif %}">
+                    <span class="team-name">{{ match.visit_team }}</span>
+                    <span class="team-score">{{ match.visit_score }}</span>
+                </div>
+            </div>
+            <div class="match-result">
+                {% set cabrera_won = (('CABRERA' in match.local_team|upper and match.local_score > match.visit_score) or
+                                      ('CABRERA' in match.visit_team|upper and match.visit_score > match.local_score)) %}
+                <span class="result-badge {% if cabrera_won %}result-win{% else %}result-loss{% endif %}">
+                    {% if cabrera_won %}We Won{% else %}We Lost{% endif %}
+                </span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% else %}
+<div class="empty-state">
+    <h2>No player statistics available</h2>
+    <p>This rival team has no recorded player data</p>
+</div>
+{% endif %}
+
+<style>
+.warning-banner {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    color: #856404;
+}
+
+.warning-banner code {
+    background: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #d63384;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.rival-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.rival-badge {
+    font-size: 3rem;
+    background: #f0f0f0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rival-subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.table-description {
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.highlight-stat {
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.rival-match {
+    border-left: 4px solid #3498db;
+}
+
+.match-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.cabrera-highlight {
+    background: #fff3f0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.cabrera-highlight .team-name {
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+.match-result {
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.result-badge {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.result-win {
+    background: #d4edda;
+    color: #155724;
+}
+
+.result-loss {
+    background: #f8d7da;
+    color: #721c24;
+}
+</style>
+
+<script>
+// Table sorting functionality
+(function() {
+    const table = document.getElementById('rivalPlayersTable');
+    if (!table) return;
+
+    const headers = table.querySelectorAll('th[data-sort]');
+    let currentSort = { column: null, ascending: true };
+
+    headers.forEach(header => {
+        header.style.cursor = 'pointer';
+        header.title = 'Click to sort';
+
+        header.addEventListener('click', function() {
+            const sortKey = this.getAttribute('data-sort');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            if (currentSort.column === sortKey) {
+                currentSort.ascending = !currentSort.ascending;
+            } else {
+                currentSort.ascending = false;
+                currentSort.column = sortKey;
+            }
+
+            headers.forEach(h => {
+                h.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            this.classList.add(currentSort.ascending ? 'sort-asc' : 'sort-desc');
+
+            rows.sort((a, b) => {
+                const headerIndex = Array.from(headers).findIndex(h => h.getAttribute('data-sort') === sortKey);
+                const allCellsA = a.querySelectorAll('td[data-value]');
+                const allCellsB = b.querySelectorAll('td[data-value]');
+
+                let aValue = allCellsA[headerIndex]?.getAttribute('data-value');
+                let bValue = allCellsB[headerIndex]?.getAttribute('data-value');
+
+                const aNum = parseFloat(aValue);
+                const bNum = parseFloat(bValue);
+
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return currentSort.ascending ? aNum - bNum : bNum - aNum;
+                }
+
+                aValue = aValue || '';
+                bValue = bValue || '';
+                return currentSort.ascending ?
+                    aValue.localeCompare(bValue) :
+                    bValue.localeCompare(aValue);
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        });
+    });
+})();
+</script>
+{% endblock %}

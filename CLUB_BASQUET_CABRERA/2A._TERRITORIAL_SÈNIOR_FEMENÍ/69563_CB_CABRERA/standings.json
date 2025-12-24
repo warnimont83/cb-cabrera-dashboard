@@ -1,0 +1,160 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "69563",
+      "team_name": "CB CABRERA",
+      "matches": "26",
+      "wins": "19",
+      "losses": "7",
+      "points_for": "1411",
+      "points_against": "1126",
+      "total_points": "45",
+      "position": "1"
+    },
+    {
+      "team_id": "70780",
+      "team_name": "AE MINGUELLA B - PURE CUISINE",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "129",
+      "points_against": "94",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "71924",
+      "team_name": "CB BELLVITGE - JOAN XXIII",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "101",
+      "points_against": "101",
+      "total_points": "3",
+      "position": "3"
+    },
+    {
+      "team_id": "73844",
+      "team_name": "LIMA-HORTA BÀSQUET",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "93",
+      "points_against": "93",
+      "total_points": "3",
+      "position": "4"
+    },
+    {
+      "team_id": "71906",
+      "team_name": "CB SANT ANDREU",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "116",
+      "points_against": "117",
+      "total_points": "3",
+      "position": "5"
+    },
+    {
+      "team_id": "71645",
+      "team_name": "SHAD CB MOLLET B",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "98",
+      "points_against": "99",
+      "total_points": "3",
+      "position": "6"
+    },
+    {
+      "team_id": "69166",
+      "team_name": "UE SANT ANDREU A",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "88",
+      "points_against": "96",
+      "total_points": "3",
+      "position": "7"
+    },
+    {
+      "team_id": "68582",
+      "team_name": "CE SANT NICOLAU B",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "72",
+      "points_against": "89",
+      "total_points": "2",
+      "position": "8"
+    },
+    {
+      "team_id": "69718",
+      "team_name": "C.B. CIC B",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "95",
+      "points_against": "112",
+      "total_points": "2",
+      "position": "9"
+    },
+    {
+      "team_id": "68953",
+      "team_name": "CB SANTA PERPÈTUA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "82",
+      "points_against": "114",
+      "total_points": "2",
+      "position": "10"
+    },
+    {
+      "team_id": "70654",
+      "team_name": "B.F. CORNELLA B",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "62",
+      "points_against": "104",
+      "total_points": "2",
+      "position": "11"
+    },
+    {
+      "team_id": "72193",
+      "team_name": "S.E. SANT JOAN DE MATA",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "77",
+      "points_against": "126",
+      "total_points": "2",
+      "position": "12"
+    },
+    {
+      "team_id": "72532",
+      "team_name": "C.B. VILADECAVALLS NEGRE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "56",
+      "points_against": "112",
+      "total_points": "2",
+      "position": "13"
+    },
+    {
+      "team_id": "71188",
+      "team_name": "CB PEDAGOGIUM",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "57",
+      "points_against": "154",
+      "total_points": "2",
+      "position": "14"
+    }
+  ]
+}

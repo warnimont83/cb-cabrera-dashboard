@@ -1,0 +1,160 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "71828",
+      "team_name": "CB CABRERA",
+      "matches": "26",
+      "wins": "3",
+      "losses": "23",
+      "points_for": "1296",
+      "points_against": "1843",
+      "total_points": "29",
+      "position": "1"
+    },
+    {
+      "team_id": "70072",
+      "team_name": "CB LES FRANQUESES A INGRUP",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "181",
+      "points_against": "67",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "68874",
+      "team_name": "C.B.VILASSAR DE MAR 1984 NEGRE",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "168",
+      "points_against": "91",
+      "total_points": "4",
+      "position": "3"
+    },
+    {
+      "team_id": "70923",
+      "team_name": "CB CALELLA VERD",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "137",
+      "points_against": "78",
+      "total_points": "4",
+      "position": "4"
+    },
+    {
+      "team_id": "68822",
+      "team_name": "CB GRANOLLERS 3",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "179",
+      "points_against": "122",
+      "total_points": "4",
+      "position": "5"
+    },
+    {
+      "team_id": "68725",
+      "team_name": "UER PINEDA DE MAR A",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "147",
+      "points_against": "99",
+      "total_points": "4",
+      "position": "6"
+    },
+    {
+      "team_id": "71516",
+      "team_name": "REFORMIT ARENYS BÀSQUET",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "121",
+      "points_against": "81",
+      "total_points": "4",
+      "position": "7"
+    },
+    {
+      "team_id": "68705",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U18M",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "140",
+      "points_against": "102",
+      "total_points": "4",
+      "position": "8"
+    },
+    {
+      "team_id": "71448",
+      "team_name": "MATARÓ PARC BOET TARONJA",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "136",
+      "points_against": "100",
+      "total_points": "4",
+      "position": "9"
+    },
+    {
+      "team_id": "69355",
+      "team_name": "CLUB BASQUET ARGENTONA NEGRE",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "113",
+      "points_against": "86",
+      "total_points": "4",
+      "position": "10"
+    },
+    {
+      "team_id": "68338",
+      "team_name": "CB PREMIÀ DE DALT - JM",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "122",
+      "points_against": "96",
+      "total_points": "4",
+      "position": "11"
+    },
+    {
+      "team_id": "73424",
+      "team_name": "INSTALA2-SANTA SUSANNA AECAM",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "153",
+      "points_against": "136",
+      "total_points": "3",
+      "position": "12"
+    },
+    {
+      "team_id": "71087",
+      "team_name": "CREU ALTA SABADELL VERMELL",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "143",
+      "points_against": "132",
+      "total_points": "3",
+      "position": "13"
+    },
+    {
+      "team_id": "72046",
+      "team_name": "GRAMENET BC BLAU",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "103",
+      "points_against": "106",
+      "total_points": "3",
+      "position": "14"
+    }
+  ]
+}

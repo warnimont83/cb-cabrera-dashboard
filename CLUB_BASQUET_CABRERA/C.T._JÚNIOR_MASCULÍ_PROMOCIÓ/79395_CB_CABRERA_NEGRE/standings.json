@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "81188",
+      "team_name": "UER PINEDA DE MAR B",
+      "matches": "10",
+      "wins": "6",
+      "losses": "4",
+      "points_for": "564",
+      "points_against": "487",
+      "total_points": "16",
+      "position": "1"
+    },
+    {
+      "team_id": "83674",
+      "team_name": "ARESA SHIPYARD - ARENYS BÀSQUET BLANC",
+      "matches": "9",
+      "wins": "7",
+      "losses": "2",
+      "points_for": "496",
+      "points_against": "431",
+      "total_points": "16",
+      "position": "2"
+    },
+    {
+      "team_id": "83042",
+      "team_name": "CB CARDEDEU TECNIDA - VERMELL",
+      "matches": "10",
+      "wins": "6",
+      "losses": "4",
+      "points_for": "544",
+      "points_against": "490",
+      "total_points": "16",
+      "position": "3"
+    },
+    {
+      "team_id": "79395",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "9",
+      "wins": "5",
+      "losses": "4",
+      "points_for": "513",
+      "points_against": "502",
+      "total_points": "14",
+      "position": "4"
+    },
+    {
+      "team_id": "82624",
+      "team_name": "CLUB BÀSQUET SANT CELONI - U17B",
+      "matches": "10",
+      "wins": "4",
+      "losses": "6",
+      "points_for": "515",
+      "points_against": "549",
+      "total_points": "14",
+      "position": "5"
+    },
+    {
+      "team_id": "83113",
+      "team_name": "C.B. PREMIÀ DE DALT - JM",
+      "matches": "8",
+      "wins": "0",
+      "losses": "8",
+      "points_for": "312",
+      "points_against": "485",
+      "total_points": "8",
+      "position": "6"
+    }
+  ]
+}

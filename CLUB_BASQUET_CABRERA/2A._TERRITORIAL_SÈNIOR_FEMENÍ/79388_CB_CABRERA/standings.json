@@ -1,0 +1,160 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "83067",
+      "team_name": "ARESA SHIPYARD - ARENYS BÀSQUET",
+      "matches": "11",
+      "wins": "10",
+      "losses": "1",
+      "points_for": "736",
+      "points_against": "453",
+      "total_points": "21",
+      "position": "1"
+    },
+    {
+      "team_id": "82633",
+      "team_name": "CLUB BÀSQUET SANT CELONI",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "742",
+      "points_against": "510",
+      "total_points": "20",
+      "position": "2"
+    },
+    {
+      "team_id": "78695",
+      "team_name": "CLÍNICA DENTAL MAVP - CB. CANET",
+      "matches": "11",
+      "wins": "9",
+      "losses": "2",
+      "points_for": "621",
+      "points_against": "471",
+      "total_points": "20",
+      "position": "3"
+    },
+    {
+      "team_id": "83373",
+      "team_name": "CB LA GARRIGA",
+      "matches": "11",
+      "wins": "8",
+      "losses": "3",
+      "points_for": "628",
+      "points_against": "497",
+      "total_points": "19",
+      "position": "4"
+    },
+    {
+      "team_id": "79388",
+      "team_name": "CB CABRERA",
+      "matches": "11",
+      "wins": "7",
+      "losses": "4",
+      "points_for": "608",
+      "points_against": "543",
+      "total_points": "18",
+      "position": "5"
+    },
+    {
+      "team_id": "83708",
+      "team_name": "LA SELVA RESTAURANT - LA VALLALTA BC",
+      "matches": "11",
+      "wins": "7",
+      "losses": "4",
+      "points_for": "570",
+      "points_against": "571",
+      "total_points": "18",
+      "position": "6"
+    },
+    {
+      "team_id": "80653",
+      "team_name": "C.B. PREMIÀ DE DALT - SF",
+      "matches": "11",
+      "wins": "7",
+      "losses": "4",
+      "points_for": "583",
+      "points_against": "585",
+      "total_points": "18",
+      "position": "7"
+    },
+    {
+      "team_id": "79823",
+      "team_name": "U. B. LLEFIÀ C",
+      "matches": "11",
+      "wins": "6",
+      "losses": "5",
+      "points_for": "629",
+      "points_against": "578",
+      "total_points": "17",
+      "position": "8"
+    },
+    {
+      "team_id": "80524",
+      "team_name": "AE MINGUELLA C - PURE CUISINE",
+      "matches": "11",
+      "wins": "4",
+      "losses": "7",
+      "points_for": "517",
+      "points_against": "549",
+      "total_points": "15",
+      "position": "9"
+    },
+    {
+      "team_id": "78889",
+      "team_name": "C.B. VILASSAR DE MAR B 1984",
+      "matches": "11",
+      "wins": "3",
+      "losses": "8",
+      "points_for": "488",
+      "points_against": "634",
+      "total_points": "14",
+      "position": "10"
+    },
+    {
+      "team_id": "81104",
+      "team_name": "INMOCAT UER PINEDA",
+      "matches": "11",
+      "wins": "2",
+      "losses": "9",
+      "points_for": "491",
+      "points_against": "588",
+      "total_points": "13",
+      "position": "11"
+    },
+    {
+      "team_id": "83039",
+      "team_name": "CB CARDEDEU TECNIDA - NEGRE",
+      "matches": "11",
+      "wins": "2",
+      "losses": "9",
+      "points_for": "531",
+      "points_against": "696",
+      "total_points": "13",
+      "position": "12"
+    },
+    {
+      "team_id": "79277",
+      "team_name": "CLUB BASQUET ARGENTONA B",
+      "matches": "11",
+      "wins": "2",
+      "losses": "9",
+      "points_for": "463",
+      "points_against": "712",
+      "total_points": "13",
+      "position": "13"
+    },
+    {
+      "team_id": "83271",
+      "team_name": "CB LLIÇÀ DE VALL",
+      "matches": "11",
+      "wins": "1",
+      "losses": "10",
+      "points_for": "412",
+      "points_against": "632",
+      "total_points": "12",
+      "position": "14"
+    }
+  ]
+}

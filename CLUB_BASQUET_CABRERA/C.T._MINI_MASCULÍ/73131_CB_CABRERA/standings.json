@@ -1,0 +1,94 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "73131",
+      "team_name": "CB CABRERA",
+      "matches": "14",
+      "wins": "10",
+      "losses": "4",
+      "points_for": "726",
+      "points_against": "612",
+      "total_points": "24",
+      "position": "1"
+    },
+    {
+      "team_id": "75056",
+      "team_name": "CB TONA 2",
+      "matches": "2",
+      "wins": "2",
+      "losses": "0",
+      "points_for": "115",
+      "points_against": "68",
+      "total_points": "4",
+      "position": "2"
+    },
+    {
+      "team_id": "73949",
+      "team_name": "CB GRANOLLERS 4",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "106",
+      "points_against": "103",
+      "total_points": "3",
+      "position": "3"
+    },
+    {
+      "team_id": "72068",
+      "team_name": "EUROPEAN INT. SCHOOL OF BARCELONA MIXTE",
+      "matches": "2",
+      "wins": "1",
+      "losses": "1",
+      "points_for": "92",
+      "points_against": "99",
+      "total_points": "3",
+      "position": "4"
+    },
+    {
+      "team_id": "71508",
+      "team_name": "MONTMELÓ CB",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "89",
+      "points_against": "94",
+      "total_points": "2",
+      "position": "5"
+    },
+    {
+      "team_id": "71823",
+      "team_name": "A.B. RONÇANA MIXTE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "71",
+      "points_against": "86",
+      "total_points": "2",
+      "position": "6"
+    },
+    {
+      "team_id": "71529",
+      "team_name": "C.B CENTELLES MIXTE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "64",
+      "points_against": "129",
+      "total_points": "2",
+      "position": "7"
+    },
+    {
+      "team_id": "72758",
+      "team_name": "C.B. CABRILS NEGRE",
+      "matches": "2",
+      "wins": "0",
+      "losses": "2",
+      "points_for": "75",
+      "points_against": "147",
+      "total_points": "2",
+      "position": "8"
+    }
+  ]
+}

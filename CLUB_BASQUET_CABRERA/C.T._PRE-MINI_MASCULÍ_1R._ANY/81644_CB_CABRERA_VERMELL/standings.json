@@ -1,0 +1,72 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "82467",
+      "team_name": "SALESIANS BADALONA",
+      "matches": "9",
+      "wins": "8",
+      "losses": "1",
+      "points_for": "400",
+      "points_against": "248",
+      "total_points": "17",
+      "position": "1"
+    },
+    {
+      "team_id": "84344",
+      "team_name": "C.B. SANTA COLOMA B",
+      "matches": "8",
+      "wins": "8",
+      "losses": "0",
+      "points_for": "493",
+      "points_against": "144",
+      "total_points": "16",
+      "position": "2"
+    },
+    {
+      "team_id": "80472",
+      "team_name": "A.E. SANT ANDREU NATZARET-1A",
+      "matches": "10",
+      "wins": "6",
+      "losses": "4",
+      "points_for": "441",
+      "points_against": "298",
+      "total_points": "16",
+      "position": "3"
+    },
+    {
+      "team_id": "80409",
+      "team_name": "UB SANT ADRIA GROC",
+      "matches": "10",
+      "wins": "4",
+      "losses": "6",
+      "points_for": "327",
+      "points_against": "360",
+      "total_points": "14",
+      "position": "4"
+    },
+    {
+      "team_id": "80590",
+      "team_name": "UE.MONTGAT - NEGRE",
+      "matches": "10",
+      "wins": "1",
+      "losses": "9",
+      "points_for": "221",
+      "points_against": "574",
+      "total_points": "11",
+      "position": "5"
+    },
+    {
+      "team_id": "81644",
+      "team_name": "CB CABRERA VERMELL",
+      "matches": "9",
+      "wins": "1",
+      "losses": "8",
+      "points_for": "201",
+      "points_against": "459",
+      "total_points": "10",
+      "position": "6"
+    }
+  ]
+}

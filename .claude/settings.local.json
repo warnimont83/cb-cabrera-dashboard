@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(chmod:*)",
+      "Bash(cat:*)",
+      "Bash(pkill:*)",
+      "WebFetch(domain:www.basquetcatala.cat)",
+      "Bash(find:*)",
+      "Bash(xargs cat:*)",
+      "Bash(curl:*)",
+      "Bash(./calculate_all_standings.sh)",
+      "Bash(pip3 install:*)"
+    ]
+  }
+}

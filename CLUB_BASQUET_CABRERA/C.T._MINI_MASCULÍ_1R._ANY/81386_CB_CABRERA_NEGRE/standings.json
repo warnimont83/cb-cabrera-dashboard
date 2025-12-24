@@ -1,0 +1,61 @@
+{
+  "competition_id": "calculated",
+  "competition_name": "Calculated from Match Results",
+  "teams": [
+    {
+      "team_id": "79415",
+      "team_name": "CREU ALTA SABADELL BLANC",
+      "matches": "8",
+      "wins": "6",
+      "losses": "2",
+      "points_for": "418",
+      "points_against": "365",
+      "total_points": "14",
+      "position": "1"
+    },
+    {
+      "team_id": "78552",
+      "team_name": "SFERIC 15 VERD",
+      "matches": "8",
+      "wins": "5",
+      "losses": "3",
+      "points_for": "406",
+      "points_against": "331",
+      "total_points": "13",
+      "position": "2"
+    },
+    {
+      "team_id": "81269",
+      "team_name": "UE BARBERA B",
+      "matches": "7",
+      "wins": "5",
+      "losses": "2",
+      "points_for": "335",
+      "points_against": "279",
+      "total_points": "12",
+      "position": "3"
+    },
+    {
+      "team_id": "83044",
+      "team_name": "CB CARDEDEU RODELEM - BLANC",
+      "matches": "7",
+      "wins": "2",
+      "losses": "5",
+      "points_for": "246",
+      "points_against": "332",
+      "total_points": "9",
+      "position": "4"
+    },
+    {
+      "team_id": "81386",
+      "team_name": "CB CABRERA NEGRE",
+      "matches": "8",
+      "wins": "1",
+      "losses": "7",
+      "points_for": "356",
+      "points_against": "454",
+      "total_points": "9",
+      "position": "5"
+    }
+  ]
+}
