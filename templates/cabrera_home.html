@@ -36,7 +36,7 @@
 <div class="teams-by-category">
     {% for category_name, teams in teams_by_category %}
     <div class="category-section">
-        <h2 class="category-header">{{ category_name }}</h2>
+        <h2 class="category-header">{{ category_name|format_team_name }}</h2>
         <div class="teams-grid">
             {% for team in teams %}
             <a href="/team/{{ team.path }}?season={{ selected_season }}" class="team-card">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="team-quick-stats">
                     {% if team.record %}
-                    <span class="team-record">{{ team.record.wins }}{{ t.wins }} - {{ team.record.losses }}{{ t.losses }}</span>
+                    <span class="team-record">{{ team.record.wins }} {{ t.wins }} - {{ team.record.losses }} {{ t.losses }}</span>
                     {% endif %}
                     <span class="team-players">{{ team.player_count }} {{ t.players|lower }}</span>
                 </div>

@@ -14,16 +14,19 @@ translations = {
 
         # Team page
         'team': 'Equip',
+        'back_to_club': 'Tornar al CB Cabrera',
         'category': 'Categoria',
         'season': 'Temporada',
         'all_seasons': 'Totes les temporades',
         'current_season': 'Temporada actual',
         'matches': 'Partits',
+        'matches_played': 'Partits jugats',
         'players': 'Jugadors',
         'player': 'Jugador',
         'rivals': 'Rivals',
         'league_standings': 'Classificació de la lliga',
         'position': 'Posició',
+        'pos': 'Pos',
         'team_name': 'Nom de l\'equip',
         'played': 'J',
         'wins': 'V',
@@ -32,6 +35,11 @@ translations = {
         'points_against': 'PC',
         'points': 'Punts',
         'total_points': 'Punts totals',
+        'games': 'Partits',
+        'total_min': 'Min totals',
+        'avg_min': 'Min mitjans',
+        'reb': 'Reb',
+        'ast': 'Ast',
 
         # Player stats
         'player_statistics': 'Estadístiques dels jugadors',
@@ -175,16 +183,19 @@ translations = {
 
         # Team page
         'team': 'Team',
+        'back_to_club': 'Back to CB Cabrera',
         'category': 'Category',
         'season': 'Season',
         'all_seasons': 'All seasons',
         'current_season': 'Current season',
         'matches': 'Matches',
+        'matches_played': 'Matches Played',
         'players': 'Players',
         'player': 'Player',
         'rivals': 'Rivals',
         'league_standings': 'League standings',
         'position': 'Position',
+        'pos': 'Pos',
         'team_name': 'Team name',
         'played': 'P',
         'wins': 'W',
@@ -193,6 +204,11 @@ translations = {
         'points_against': 'PA',
         'points': 'Points',
         'total_points': 'Total points',
+        'games': 'Games',
+        'total_min': 'Total Min',
+        'avg_min': 'Avg Min',
+        'reb': 'Reb',
+        'ast': 'Ast',
 
         # Player stats
         'player_statistics': 'Player statistics',
